@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="ilghar rahno">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web222 final assessment</title>
+    <link rel="stylesheet" href="styling.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="main_body" class="container">
+
+    <div id="image_and_name">
+        <img id="my_picture" class="container center-block" src="me.jpg" alt="picture of ilghar rahno">
+        <p id="name" >Ilghar Rahno</p>
+    </div>
+
+    <p id="title" class="centre">Full Stack Developer</p>
+
+    <div id="button_div">
+        <button class="button">
+            <a href="../src/RESUME.pdf" download>
+                <i class="fa fa-download"></i>&nbsp&nbsp&nbsp&nbspDownload Resume
+            </a>
+        </button>
+        <button class="button"><a href="#form_box">Contact Me</a></button>
+        <button class="button"><a onclick=window.open("https://c.tenor.com/GryShD35-psAAAAC/troll-face-creepy-smile.gif")>My Work</a></button>
+    </div>
+
+    <div id="education_border" class="centre">
+        <div id="education_box">
+        <span>Education</span>
+        <div class="school_box">
+            <div class="school_info">
+                Ryerson<br>Sep 2019 - Aug 2020<br>Electrical Engineering
+            </div>
+            <div class="school_details">
+                Completed classes such as calculus 1, 2 and 3, physics, chemistry and introduction to circuits and programming in C.
+            </div>
+        </div>
+        <div class="school_box">
+            <div class="school_info">
+                Seneca<br>Sep 2021 - Aug 2024 Expected<br>Programming and Analysis
+            </div>
+            <div class="school_details">
+                Learned coding languages such as C and C++, database design with oracle, and web development using HTML, CSS and JavaScript.            </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="about_me_border">
+        <div id="about_me_box">
+            <span>About Me</span>
+            <div id="about_me">
+            <div id="about_me_info">
+                    Age: 23
+                    <br>Email:      ilgharrahno2.0@gmail.com
+                    <br>Language:   Farsi, Turkish, English
+                    <br>Class:      NCC
+                    <br>Student Id: 137542213
+                    <br>Instructor: Mark Meritt
+                </div>
+
+                <div id="about_me_basic">
+                    I love to paint with bob ross, competitive racing games and to solver problems.<br>
+                    I believe taking on intentional responsibility is the answer to life.<br>
+                    If you want to have the adventure of your life, try telling the truth.<br>
+                    Pagani Zonda R is my favorite car.
+                </div>
+                </div>
+
+        </div>
+    </div>
+
+    <div id="form_border">
+        <div id="form_box">
+            <span>Contact Me</span>
+            <form id="form_input" action="https://httpbin.org/post" method="post" autocomplete="on">
+                <div id="form_info">
+
+                    <div class="input_box">
+                        <label for="fname">Full name: </label>
+                        <input class="form_input" type="text" id="fname" name="fname" required>
+                    </div>
+
+                    <div class="input_box">
+                        <label for="email">Email: </label>
+                        <input class="form_input" type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="input_box">
+                        <label for="address">Address: </label>
+                        <input class="form_input" type="text" id="address" name="address" required>
+                    </div>
+
+                    <div class="input_box">
+                        <label for="city">City: </label>
+                        <input class="form_input" type="text" id="city" name="city" required>
+                    </div>
+
+                    <div class="input_box">
+                        <label for="postal">Postal code: </label>
+                        <input class="form_input" type="text" id="postal" name="postal" pattern="^[ABCEGHJKLMNPRSTVXY]{1}\d{1}[A-Z]{1} *\d{1}[A-Z]{1}\d{1}$" value="Must be upper case" required>
+                    </div>
+
+                </div>
+
+                <div id="form_radio">
+                    What is this about?
+                    <br>
+                    <label for="question">Question</label>
+                    <input type="checkbox" id="question" name="question" value="question">
+                    <label for="comment">Comment</label>
+                    <input type="checkbox" id="comment" name="comment" value="comment">
+                    <label for="hiring">Hiring</label>
+                    <input type="checkbox" id="hiring" name="hiring" value="hiring" onclick="hiringRadio()">
+
+                    <div id="hiring_input">
+
+                    </div>
+                </div>
+
+                <div id="form_text">
+                    <label for="text_area"></label>
+                    <textarea id="text_area" name="text_area" rows="5" cols="30" required>place holder here.</textarea>
+                    <br>
+                </div>
+
+
+                <div id="form_color">
+                    <label for="favorite_color">What is your favorite color?</label>
+                    <input type="color" id="favorite_color" name="favorite_color">
+                </div>
+
+                <input id="submit_button" type="submit" value="Submit">
+
+            </form>
+
+        </div>
+    </div>
+
+    <footer>
+        <div id="triangle"></div>
+        <span>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.</span>
+    </footer>
+    </div>
+<script src="apps.js"></script>
+</body>
+
+</html>

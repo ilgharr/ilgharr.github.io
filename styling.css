@@ -1,0 +1,211 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: linear-gradient(#00eaff , #2a1644 80%);}
+
+#main_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1024px;
+    min-width: 481px;
+    width: 95%;
+    min-height: 100vh;
+    text-align: center;
+    margin: auto;
+}
+/*/==========================Picture AND Name==================/*/
+#name, #title{
+    padding-top: 15px;
+    color: #ffffff;
+    font-family: 'anton', sans-serif;
+}
+
+#name{
+    font-size: 75px;
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+
+#title{
+    font-size: 35px;
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+
+#my_picture{
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    border-radius: 12px;
+}
+/*/=============================================================/*/
+/*/=================================Buttons=====================/*/
+#button_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0 0 0;
+    padding: 0;
+    width: 100%;
+}
+
+.button {
+    margin-top: 25px;
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3,#00DDEB, #00ff04);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(255, 255, 255, 0.19) 0 15px 30px -5px;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    padding: 3px;
+    user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+.button:active,
+.button:hover {
+    outline: 0;
+}
+
+.button a{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition:400ms;
+}
+
+.button:hover a{
+    background: none;
+}
+/*/=============================================================/*/
+/*/=====================Education AND About Me==================/*/
+#education_border, #about_me_border , #form_border {
+    width: 100%;
+    border-radius: 10px;
+    margin: 25px 0 15px 0;
+    color: #000000;
+    background: radial-gradient(circle, rgb(0, 41, 133) 10%, rgba(255,255,255,1) 90%);;
+    white-space: normal;
+}
+
+#education_box, #about_me_box , #form_box {
+    margin: 5px;
+    background-color: rgba(224, 224, 224, 0.62);
+}
+
+#education_box span, #about_me_box span, #form_box span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.school_box, #about_me {
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.school_info + .school_details, #about_me_info + #about_me_basic {
+    margin-left: 10px;
+}
+
+.school_details, .school_info , #about_me_info, #about_me_basic {
+    padding: 10px;
+    text-align: left;
+    background-color: #282828;
+    border-radius: 7px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.school_info{
+    width: 33%;
+}
+
+#about_me_info{
+    min-width: 350px;
+}
+
+.school_details{
+    width: 67%;
+}
+
+#about_me_info{
+    width: 36.5%;
+}
+/*/=============================================================/*/
+/*/=====================Form====================================/*/
+    #about_me_basic{
+        width: 63.5%;
+    }
+
+    #form_box{
+        display: flex;
+        flex-direction: column;
+        font-size: 22px;
+    }
+
+    #form_info{
+        margin: 10px 0 0 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .form_input{
+        height: 18px;
+        border: black solid;
+    }
+
+    .input_box{
+        margin: 10px;
+    }
+
+    .input_box:hover{
+        border: none;
+    }
+
+    #form_radio{
+        margin: 20px 0 20px 0;
+    }
+
+    #form_text , #form_color{
+        margin: 10px 0 0 0;
+    }
+
+    #text_area{
+        font-size: 15px;
+        border: black solid;
+    }
+/*/=============================================================/*/
+/*/=============================Footer==========================/*/
+footer{
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+}
+
+footer span{
+    margin-top: 15px;
+}
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 200px solid #858585;
+    border-bottom: 70px solid transparent;
+}
+/*/=============================================================/*/
